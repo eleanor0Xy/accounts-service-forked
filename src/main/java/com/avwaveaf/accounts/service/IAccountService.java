@@ -10,4 +10,10 @@ public interface IAccountService {
     void createAccount(CustomerDTO customerDTO);
 
     CustomerDTO getAccountDetail(String mobileNumber);
+
+    /**
+    *  handler for update PUT method in customer Object
+    * @param updatedCustomer - CustomerDTO Object
+    * */
+    boolean updateAccount(CustomerDTO updatedCustomer);
 }
